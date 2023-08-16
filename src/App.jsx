@@ -45,6 +45,7 @@ const App = () => {
       <h4 className="title">React Timer</h4>
       <input
         className="user-input"
+        type="number"
         placeholder="Enter your time in seconds"
         value={!isTimeAddedByUser ? "" : clonedTime}
         onChange={(e) => {
