@@ -1,0 +1,91 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  background-color: rgb(54, 69, 79);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 25px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: underline;
+  color: rgb(249, 246, 238);
+}
+
+.user-input {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: start;
+  outline: none;
+}
+
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: rgb(249, 246, 238);
+}
+
+.time-container {
+  background-color: coral;
+  padding: 20px;
+  border: none;
+  border-radius: 8px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.colon {
+  color: coral;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.button {
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: rgb(249, 246, 238);
+  font-size: 18px;
+  font-weight: 600;
+  outline: none;
+}
+
+.button:hover {
+  background-color: coral;
+  color: rgb(249, 246, 238);
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
