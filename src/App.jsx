@@ -24,18 +24,21 @@ const App = () => {
 
   useEffect(() => {
     let interval;
-    if (isRunning) {
+    if (isRunning && time > 0) {
       interval = setInterval(() => {
         setTime((prevTime) =>
           isTimeAddedByUser ? prevTime - 1 : prevTime + 1
         );
       }, 1000);
+    } else if (time === 0) {
+      setIsRunning(() => false);
+      setIsTimeAddedByUser(() => false);
     }
 
     return () => {
       clearInterval(interval);
     };
-  }, [isRunning, isTimeAddedByUser]);
+  }, [isRunning, isTimeAddedByUser, time]);
 
   return (
     <div className="main-container">
